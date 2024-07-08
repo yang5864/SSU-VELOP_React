@@ -14,12 +14,12 @@
     margin: 0;
     font-family: var(--font-family);
 }
-.top-header{
+.top-header {
     width: 100%;
     height: 50px;
 }
 
-.top-header .top-nav{
+.top-header .top-nav {
     display: flex;
     height: 36px;
     justify-content: space-between;
@@ -34,9 +34,6 @@
     display: flex;
     align-items: center;
     list-style-type: none;
-    align-content: center;
-    padding: 0;
-    margin: 0;
 }
 
 .top-header .top-nav .right-container {
@@ -47,58 +44,71 @@
 .top-header .top-nav .left-nav li,
 .top-header .top-nav .right-nav li {
     margin-right: 18px;
+    height: 36px;
 }
 
 .top-header .top-nav .left-nav li a,
-.top-header .top-nav .right-nav li a{
+.top-header .top-nav .right-nav li a {
     text-decoration: none;
     font-size: 13px;
     display: block;
     line-height: 36px;
-    color:var( --gray-color);
+    color: var(--gray-color);
 }
 
-.top-header .top-nav ul li a:hover{
+.top-header .top-nav ul li a:hover {
     text-decoration: underline;
 }
 
-.top-header .top-nav .menu_bar img{
-    align-content: center;
+.top-header .top-nav .menu_bar {
     margin-right: 18px;
-    height: 18px;
+    display: flex;
+    align-items: center;
 }
 
-.top-header .top-nav .menu_bar:hover{
+.top-header .top-nav .menu_bar img {
+    height: 18px;
+    display: block;
+}
+
+.top-header .top-nav .menu_bar img:hover {
     cursor: pointer;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
+
+.top-header .top-nav .profile_img_wrap {
+    display: flex;
+    align-items: center;
 }
 
 .top-header .top-nav .profile_img_wrap img {
     width: 36px;
     height: 36px;
     border-radius: 18px;
+    display: block;
 }
 
-.top-header .top-nav .profile_img_wrap img:hover{
-    transform: scale(1.1);
+.top-header .top-nav .profile_img_wrap img:hover {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
     cursor: pointer;
 }
 
-.main-section{
+.main-section {
     margin-top: 100px;
-    width:100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.main-section .logo-wrap{
+.main-section .logo-wrap {
     height: 233px;
 }
-.main-section .logo-wrap a{
+.main-section .logo-wrap a {
     display: block;
     padding-top: 109px;
 }
-.main-section .searchbar-wrap{
+.main-section .searchbar-wrap {
     border: solid 1px var(--light-gray-color);
     width: 100%;
     max-width: 490px;
@@ -110,58 +120,56 @@
     padding-right: 8px;
 }
 
-.main-section .searchbar-wrap i{
+.main-section .searchbar-wrap i {
     line-height: 50px;
-    color: var(--midium-gray-color)
+    color: var(--midium-gray-color);
 }
 
 .main-section .searchbar-wrap .icon {
     height: 20px;
-    margin: 10px;
-    margin-top: 15px;
+    margin: 15px 10px 10px;
 }
 
-.main-section .searchbar-wrap .icon:hover{
+.main-section .searchbar-wrap .icon:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
 
-.main-section .searchbar-wrap:hover,
-.main-section .searchbar-wrap:focus-within {
+.main-section .searchbar-wrap:focus-within,
+.main-section .searchbar-wrap:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.main-section .searchbar-wrap .search-input{
-    width:400px;
-    height:50px;
+.main-section .searchbar-wrap .search-input {
+    width: 400px;
+    height: 50px;
     font-size: 16px;
     border: none;
     outline: none;
 }
 
-.main-section .buttons{
-    padding-top:30px
+.main-section .buttons {
+    padding-top: 30px;
 }
 
-.main-section .buttons button{
+.main-section .buttons button {
     background-color: var(--button-gray-color);
-    border:  0;
+    border: 1px solid transparent;
     height: 38px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 5px;
     border-radius: 5px;
     font-size: 14px;
-    color: var(--button-text-gray-color)
+    color: var(--button-text-gray-color);
 }
 
-
-.main-section .buttons button:hover{
+.main-section .buttons button:hover {
     border: 1px solid var(--button-text-gray-color);
     cursor: pointer;
 }
 
-footer{
+footer {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -170,14 +178,14 @@ footer{
     font-size: 15px;
 }
 
-footer .country{
+footer .country {
     border-top: solid 1px var(--footer-border-color);
     padding-left: 32px;
     line-height: 40px;
     height: 40px;
 }
 
-footer .foot-links-wrap{
+footer .foot-links-wrap {
     border-top: solid 1px var(--footer-border-color);
     padding-left: 32px;
     line-height: 40px;
@@ -187,7 +195,7 @@ footer .foot-links-wrap{
 }
 
 footer .foot-links-wrap .foot-links-wrap-right {
-    width: 50%
+    width: 50%;
 }
 
 footer .foot-links-wrap .foot-links-wrap-right ul {
