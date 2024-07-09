@@ -79,7 +79,7 @@ body {
 }
 
 .btn-social-login {
-    transition: all .2s;
+    transition: all .3s;
     outline: 0;
     border: 1px solid transparent;
     padding: .5rem !important;
@@ -91,6 +91,10 @@ body {
 
 .btn-social-login:focus {
     box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
+}
+
+.btn-social-login:hover {
+    transform: scale(1.2);
 }
 
 .text-dark {
