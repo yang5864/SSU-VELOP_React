@@ -97,8 +97,10 @@
     transition: background-color 0.3s ease;
 }
 
-.top-header .top-nav .menu_bar:hover::before {
+.top-header .top-nav .menu_bar:hover::before,
+.top-header .top-nav .menu_bar img:hover{
     background-color: var(--button-gray-color);
+    cursor: pointer;
 }
 
 .top-header .top-nav .profile_img_wrap {
@@ -111,16 +113,17 @@
     height: 36px;
     border-radius: 18px;
     display: block;
-    transition: box-shadow 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .top-header .top-nav .profile_img_wrap img:hover {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
     cursor: pointer;
+    transform: scale(1.3);
 }
 
 .main-section {
-    margin-top: 100px;
+    margin-top: 25px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -157,7 +160,6 @@
 }
 
 .main-section .searchbar-wrap .icon:hover {
-    transform: scale(1.1);
     cursor: pointer;
 }
 
